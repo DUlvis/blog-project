@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+    font-size: 16px;
+    color: #111111;
+    a,li{
+        text-decoration: none;
+        list-style: none;
+    }
+
+}
+.app-bar{
+    background-color: #f0f0f0;
+    height: 60px;
+    box-shadow: none;
+}
+.container{
+    padding: 0 15px;
+}
+.tool-bar{
+    min-height: 60px;
+    height: 60px;
+    padding: 0;
+}
