@@ -1,4 +1,5 @@
 import CssBaseline from '@mui/material/CssBaseline'
+import { StyledEngineProvider } from '@mui/material/styles'
 import Header from 'container/Header/Header'
 
 type Props = {}
@@ -6,8 +7,10 @@ type Props = {}
 const App = (props: Props) => {
     return (
         <>
-            <CssBaseline />
-            <Header />
+            <StyledEngineProvider injectFirst>
+                <CssBaseline />
+                <Header />
+            </StyledEngineProvider>
         </>
     )
 }

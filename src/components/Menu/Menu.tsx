@@ -1,16 +1,22 @@
-import Button from '@mui/material/Button'
-
+import { Container } from '@mui/material'
+import './Menu.scss'
 type Props = {}
 
 const Menu = (props: Props) => {
     return (
-        <>
-            <Button color="inherit">Home</Button>
-            <Button color="inherit">Blog</Button>
-            <Button color="inherit">Services</Button>
-            <Button color="inherit">Pricing</Button>
-            <Button color="inherit">About US</Button>
-        </>
+        <div className="navbar">
+            <Container maxWidth="lg" className="container">
+                <div className="main-menu">
+                    <button>Home</button>
+                    <button>About Us</button>
+                    <button>Typography</button>
+                    <button>Travel</button>
+                    <button>Business</button>
+                    <button>Favorites</button>
+                    <button>Contact</button>
+                </div>
+            </Container>
+        </div>
     )
 }
 
