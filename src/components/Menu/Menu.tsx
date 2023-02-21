@@ -1,5 +1,6 @@
 import { Container } from '@mui/material'
 import './Menu.scss'
+import MenuItem from './MenuItem'
 type Props = {}
 
 const Menu = (props: Props) => {
@@ -7,13 +8,13 @@ const Menu = (props: Props) => {
         <div className="navbar">
             <Container maxWidth="lg" className="container">
                 <div className="main-menu">
-                    <button>Home</button>
-                    <button>About Us</button>
-                    <button>Typography</button>
-                    <button>Travel</button>
-                    <button>Business</button>
-                    <button>Favorites</button>
-                    <button>Contact</button>
+                    <MenuItem to="/">Home</MenuItem>
+                    <MenuItem to="/about">About Us</MenuItem>
+                    <MenuItem to="/typography">Typography</MenuItem>
+                    <MenuItem to="/travel">Travel</MenuItem>
+                    <MenuItem to="/business">Business</MenuItem>
+                    <MenuItem to="/favorites">Favorites</MenuItem>
+                    <MenuItem to="/contact">Contact</MenuItem>
                 </div>
             </Container>
         </div>
