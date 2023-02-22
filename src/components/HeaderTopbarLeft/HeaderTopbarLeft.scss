@@ -10,6 +10,11 @@
                 border: none;
             }
         }
+        &:first-child{
+            a{
+                padding-left: 0;
+            }
+        }
         a{
             font-size: 12px;
             padding: 0 10px;

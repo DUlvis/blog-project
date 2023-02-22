@@ -1,6 +1,7 @@
 import { Grid } from '@mui/material'
 import articlesArray from 'utils/articlesArray'
 import ArticleListItem from './ArticleListItem'
+import './ArticlesList.scss'
 
 type ArticlesProps = {
     id: number
@@ -19,23 +20,39 @@ const ArticlesList = (props: Props) => {
                 container
                 direction="row"
                 justifyContent="space-between"
-                alignItems="center"
+                alignItems="stretch"
                 sx={{
-                    padding: '35px 0',
+                    padding: '30px 0 35px',
+                    width: '100%',
                 }}
             >
-                {articlesArray.map(
-                    ({ id, image, category, title, text }: ArticlesProps) => (
-                        <Grid item xs={12} sm={6} md={3} key={id}>
-                            <ArticleListItem
-                                image={image}
-                                category={category}
-                                title={title}
-                                text={text}
-                            />
-                        </Grid>
-                    )
-                )}
+                {articlesArray
+                    .slice(0, 4)
+                    .map(
+                        ({
+                            id,
+                            image,
+                            category,
+                            title,
+                            text,
+                        }: ArticlesProps) => (
+                            <Grid
+                                className="article-grid-item"
+                                item
+                                xs={12}
+                                sm={6}
+                                md={3}
+                                key={id}
+                            >
+                                <ArticleListItem
+                                    image={image}
+                                    category={category}
+                                    title={title}
+                                    text={text}
+                                />
+                            </Grid>
+                        )
+                    )}
             </Grid>
         </>
     )

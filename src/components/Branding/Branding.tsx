@@ -1,5 +1,6 @@
 import { Container } from '@mui/material'
 import logo from 'assets/logo.png'
+import { NavLink } from 'react-router-dom'
 import './Branding.scss'
 type Props = {}
 
@@ -8,10 +9,10 @@ const Branding = (props: Props) => {
         <div className="site-branding">
             <Container maxWidth="lg" className="container">
                 <div className="site-branding-inner">
-                    <a href="#">
+                    <NavLink to={'/'}>
                         <img src={logo} alt="Logo Radians" />
-                    </a>
-                    <p>Modern Magazine Theme</p>
+                    </NavLink>
+                    <p className="site-branding-theme">Modern Magazine Theme</p>
                 </div>
             </Container>
         </div>

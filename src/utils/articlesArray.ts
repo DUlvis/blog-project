@@ -35,6 +35,34 @@ const articlesArray: ArticlesProps[] = [
         title: 'Last Night',
         text: 'Meantime Giorgio, with tranquil movements, had been unfastening the door; the flood of light fell on Signora Teresa, with her two girls gathered to…',
     },
+    {
+        id: 5,
+        image: '/images/last-night.jpg',
+        category: 'Travel',
+        title: 'Last Night',
+        text: 'Meantime Giorgio, with tranquil movements, had been unfastening the door; the flood of light fell on Signora Teresa, with her two girls gathered to…',
+    },
+    {
+        id: 6,
+        image: '/images/last-night.jpg',
+        category: 'Travel',
+        title: 'Last Night',
+        text: 'Meantime Giorgio, with tranquil movements, had been unfastening the door; the flood of light fell on Signora Teresa, with her two girls gathered to…',
+    },
+    {
+        id: 7,
+        image: '/images/last-night.jpg',
+        category: 'Travel',
+        title: 'Last Night',
+        text: 'Meantime Giorgio, with tranquil movements, had been unfastening the door; the flood of light fell on Signora Teresa, with her two girls gathered to…',
+    },
+    {
+        id: 8,
+        image: '/images/last-night.jpg',
+        category: 'Travel',
+        title: 'Last Night',
+        text: 'Meantime Giorgio, with tranquil movements, had been unfastening the door; the flood of light fell on Signora Teresa, with her two girls gathered to…',
+    },
 ]
 
 export default articlesArray

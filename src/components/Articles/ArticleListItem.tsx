@@ -1,4 +1,5 @@
 import { Card, CardContent } from '@mui/material'
+import { NavLink } from 'react-router-dom'
 import './ArticleListItem.scss'
 
 type Props = {
@@ -13,14 +14,14 @@ const ArticleListItem = ({ image, category, title, text }: Props) => {
         <>
             <Card className="article">
                 <CardContent className="article-content">
-                    <a href="#" className="image">
-                        <img src={image} alt="photo-content" />
-                    </a>
-                    <a href="#" className="category">
+                    <NavLink className="image" to={'/' + category}>
+                        <img src={image} alt="content" />
+                    </NavLink>
+                    <NavLink className="category" to={'/' + category}>
                         {category}
-                    </a>
-                    <div className="title">{title}</div>
-                    <div className="text">{text}</div>
+                    </NavLink>
+                    <h2 className="title">{title}</h2>
+                    <p className="text">{text}</p>
                 </CardContent>
             </Card>
         </>
