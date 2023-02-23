@@ -45,6 +45,7 @@ const ArticlesList = (props: Props) => {
                                 key={id}
                             >
                                 <ArticleListItem
+                                    id={id}
                                     image={image}
                                     category={category}
                                     title={title}
