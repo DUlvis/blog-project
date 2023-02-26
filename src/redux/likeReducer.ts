@@ -9,7 +9,7 @@ export const initialState: LikeArticles = {
     3: true,
 }
 
-export const likeSlice = createSlice({
+const likeSlice = createSlice({
     name: 'like',
     initialState,
     reducers: {
