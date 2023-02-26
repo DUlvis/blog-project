@@ -1,0 +1,44 @@
+.article{
+    border-radius: 0;
+    box-shadow: none;
+    .article-content{
+        padding: 0;
+    }
+    .image{
+        display: block;
+        width: 100%;
+        height: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .category{
+        margin: 0 2px;
+        font-family: 'Julius Sans One', sans-serif;
+        font-size: 13px;
+        line-height: 1.8;
+        color: #cc0000;
+        &:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+    .title{
+        margin: 3px 0 0;
+        font-family: 'EB Garamond', serif;
+        font-size: 29px;
+        line-height: 1.15;
+        font-weight: 400;
+        &:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+    .text{
+        margin: 20px 0 0;
+        font-family: 'Cabin', sans-serif;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+}

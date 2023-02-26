@@ -1,4 +1,5 @@
 import { Typography } from '@mui/material'
+import { NavLink } from 'react-router-dom'
 import './HeaderTopbarLeft.scss'
 type Props = {}
 
@@ -11,16 +12,16 @@ const HeaderTopbarLeft = (props: Props) => {
         >
             <ul className="menu">
                 <li>
-                    <a href="#">FAQs</a>{' '}
+                    <NavLink to={'/'}>FAQs</NavLink>
                 </li>
                 <li>
-                    <a href="#">Policy</a>{' '}
+                    <NavLink to={'/'}>Policy</NavLink>
                 </li>
                 <li>
-                    <a href="#">En</a>{' '}
+                    <NavLink to={'/'}>En</NavLink>
                 </li>
                 <li>
-                    <a href="#">Fr</a>{' '}
+                    <NavLink to={'/'}>Fr</NavLink>
                 </li>
             </ul>
         </Typography>
